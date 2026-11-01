@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Bluey</string>
+    <string name="task_placeholder">What are we working on?</string>
+    <string name="start_focus">Start focus</string>
+    <string name="pause_focus">Pause focus</string>
+    <string name="resume_focus">Resume focus</string>
+    <string name="end_focus">End focus</string>
+    <string name="test_nudge">Test a nudge</string>
+    <string name="developer_mode">Developer Mode</string>
+    <string name="pair_mac">Pair Mac (QR)</string>
+    <string name="focus_sessions">Focus sessions</string>
+    <string name="start_listening">Start listening</string>
+    <string name="stop_listening">Stop listening</string>
+    <string name="voice_history">Voice history</string>
+    <string name="copy_prompt">Copy prompt for agent</string>
+    <string name="copied">Copied</string>
+</resources>

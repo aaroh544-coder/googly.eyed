@@ -1,0 +1,8 @@
+{
+  "name": "Bluey",
+  "description": "Blueberry focus companion with interactive animated face, focus sessions, screen nudges, and companion link.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
