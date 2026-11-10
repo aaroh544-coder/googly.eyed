@@ -23,7 +23,7 @@ The UI, animations, timer engine, and session history are shared between an **An
   - Companion sidebar with Mini Bluey avatar and volume controls.
   - Voice session history with speaker diarization, questions asked, replies, research reports, and Codex notes.
   - **Copy Prompt for Agent**: Generates structured markdown prompt with session details ready to paste to LLMs/AI (uses the platform clipboard).
-  - Pair Mac dialog with simulated QR scanning and local network discovery.
+  - Pair computer dialog with simulated QR scanning and local network discovery.
 
 ## Supported platforms
 

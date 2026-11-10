@@ -82,7 +82,7 @@ fun PairingDialog(
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Text(
-                        text = "Pair Mac",
+                        text = "Pair computer",
                         fontFamily = Fredoka,
                         fontSize = 24.sp,
                         color = Color.White
@@ -133,14 +133,14 @@ fun PairingDialog(
                     modifier = Modifier.fillMaxWidth()
                 ) {
                     Text(
-                        text = if (connected) "Connected to ${currentMacName ?: "Mac"}" else "Scan the QR code in Bluey's Mac menu",
+                        text = if (connected) "Connected to ${currentMacName ?: "computer"}" else "Scan the QR code in Bluey on your computer",
                         fontFamily = Fredoka,
                         fontSize = 18.sp,
                         color = if (connected) Palette.TaskGreen else Color.White
                     )
                     Spacer(modifier = Modifier.height(6.dp))
                     Text(
-                        text = "Make sure your iPhone and Mac are on the same local network.",
+                        text = "Make sure your phone and computer are on the same Wi-Fi network.",
                         fontFamily = IBMPlexSans,
                         fontSize = 13.sp,
                         color = Palette.InkSoft

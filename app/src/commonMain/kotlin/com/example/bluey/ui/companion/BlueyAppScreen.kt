@@ -133,7 +133,7 @@ fun BlueyAppScreen(
                                             .background(if (connectedMacName != null) Palette.TaskGreen else Palette.InkSoft.copy(alpha = 0.5f))
                                     )
                                     Text(
-                                        text = connectedMacName ?: "Looking for your Mac",
+                                        text = connectedMacName ?: "Looking for your computer",
                                         fontFamily = IBMPlexSans,
                                         fontSize = 11.sp,
                                         color = Palette.InkSoft
@@ -228,7 +228,7 @@ fun BlueyAppScreen(
                                             .background(if (connectedMacName != null) Palette.TaskGreen else Palette.InkSoft.copy(alpha = 0.5f))
                                     )
                                     Text(
-                                        text = connectedMacName ?: "Looking for your Mac",
+                                        text = connectedMacName ?: "Looking for your computer",
                                         fontFamily = IBMPlexSans,
                                         fontSize = 12.sp,
                                         color = Palette.InkSoft,
@@ -299,7 +299,7 @@ private fun SidebarControls(
         ) {
             Icon(Icons.Default.QrCode, contentDescription = null, modifier = Modifier.size(16.dp))
             Spacer(modifier = Modifier.width(8.dp))
-            Text("Pair Mac (QR)", fontFamily = IBMPlexSans)
+            Text("Pair computer (QR)", fontFamily = IBMPlexSans)
         }
 
         val isListening = voiceState != VoiceState.ASLEEP

@@ -84,7 +84,7 @@ data class BlueySession(
         val root = "~/Documents/Bluey Notes"
         val path = notesPath ?: "$root/ (folder starting $isoDay)"
         return """
-I recorded a meeting with my Bluey app on ${formatDate(started, "EEEE, MMMM d, yyyy 'at' h:mm a")}. The notes are on my Mac in $path
+I recorded a meeting with my Bluey app on ${formatDate(started, "EEEE, MMMM d, yyyy 'at' h:mm a")}. The notes are on my computer in $path
 
 - notes.md: the full transcript with timestamps and speaker labels (A, B, … per five-minute chunk), plus my questions to Bluey, its replies and research reports. Start here.
 - session.json: the same data, structured.

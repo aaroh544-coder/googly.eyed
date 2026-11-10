@@ -98,7 +98,7 @@ fun FocusFaceHUD(
 
                 // Status line
                 val statusText = when {
-                    !companionConnected -> "Pair your Mac to focus together"
+                    !companionConnected -> "Pair your computer to focus together"
                     session == null || session.status == FocusSession.Status.ENDED -> "Hold Bluey and describe a task"
                     session.status == FocusSession.Status.PAUSED -> "Paused"
                     else -> {
@@ -212,7 +212,7 @@ fun FocusFaceHUD(
                 if (!companionConnected) {
                     HudIconButton(
                         icon = Icons.Default.QrCode,
-                        contentDescription = "Pair Mac",
+                        contentDescription = "Pair computer",
                         testTag = "pair_mac_button",
                         onClick = { onOpenPairing() }
                     )

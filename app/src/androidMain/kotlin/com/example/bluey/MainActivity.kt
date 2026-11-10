@@ -19,7 +19,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
 
-        // Keep screen on when focusing under monitor, like iOS UIApplication.shared.isIdleTimerDisabled
+        // Keep the display awake while a focus session is running (Android equivalent of an iOS idle-timer override)
         window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON)
 
         // Hide system bars for immersive desk-companion experience
