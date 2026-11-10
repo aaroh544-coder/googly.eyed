@@ -99,15 +99,17 @@ jobs:
           path: dist
           merge-multiple: true
 
-      - name: Show artifacts
+      # No checkout in this job, so gh cannot infer the repository from a remote.
+      - name: Check artifacts
         run: |
           ls -lh dist
-          unzip -l dist/Bluey-windows-x64.zip | head -5
-          unzip -l dist/Bluey-windows-x64.zip | grep -q "Bluey/Bluey.exe"
+          unzip -l dist/Bluey-windows-x64.zip | grep -E "Bluey/Bluey\.exe$"
+          test -s dist/bluey-debug.apk
 
       - name: Create release
         env:
           GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
         run: |
           cat > release-notes.md <<'EOF'
           Bluey — blueberry focus companion for Android and Windows.
