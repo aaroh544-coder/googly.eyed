@@ -1,5 +1,8 @@
 .build/
 build/
+.gradle/
+local.properties
+.tools/
 DerivedData/
 *.xcuserstate
 xcuserdata/
@@ -8,3 +11,6 @@ xcuserdata/
 Secrets.xcconfig
 *.env
 .env*
+
+# Local build outputs (APK / Windows bundle)
+dist/
